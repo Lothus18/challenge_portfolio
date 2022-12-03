@@ -1,0 +1,410 @@
+:root{
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+   --cinza: #BEBEBE;
+   --cinza-escuro: #696969;
+   --salmao: #FFA07A;
+   --pessego: #FFDAB9;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.pagina-inteira{
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+ol, ul,li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*Sessão Menu*/
+
+section.menu{
+    background-color: var(--pessego);
+}
+
+.menu__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.menu__title {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 2rem;
+}
+
+.menu__photo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--salmao);
+    height: 3rem;
+}
+
+.menu__list__item:hover {
+	text-decoration: underline;
+    font-weight: bold;
+}
+
+/*Sessão Title*/
+
+section.title{
+    text-align: center;
+}
+
+.title__bio {
+    padding-top: 2rem;
+    margin: 2rem;
+}
+
+.title__network {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.75rem;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.title__network__item {
+    background-color: var(--salmao);
+}
+
+/*Sessão About*/
+
+.about__title {
+    text-align: center;
+}
+
+.about__paragraph {
+    text-align: center;
+    margin: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/*Sessão Skills*/
+
+.skills {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.skills__title {
+    text-align: center;
+}
+
+.skills__line {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.75rem;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills__box {
+    text-align: center;
+}
+
+/*Sessão Hobbies*/
+
+.hobbies  {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.hobbies__title {
+    text-align: center;
+}
+
+.hobbies__line {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 0.75rem;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hobbies__box {
+    text-align: center;
+}   
+
+/* Experiência Acadêmica*/
+
+.academic {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.academic__title {
+    text-align: center;
+}
+
+.academic__courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.academic__courses__list {
+    text-align: center;
+}
+
+/* experiência*/
+
+.experience {
+    padding-top: 3rem;
+    padding-bottom: 3rem; 
+}
+
+.experience__section__title {
+    text-align: center;
+}
+
+.experience__box {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.experience__decodificador {
+    width: 50%;
+    height: 50%;
+    align-self: center;
+    padding-bottom: .7rem;
+}
+
+.experience__forca {
+    width: 50%;
+    height: 50%;
+    align-self: center;
+    padding-bottom: .7rem;
+}
+
+.experiencia__botao--repo, .experiencia__botao--demo {
+    background-color: var(--pessego);
+    color: black;
+    font-weight: bold;
+    border: 1px dashed black;
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.experiencia__botao--repo:hover {
+background: var(--salmao);
+transform: scale(1.0);
+}
+
+.experiencia__botao--demo:hover {
+    background: var(--salmao);
+    transform: scale(1.0);
+}
+
+
+/*Contato*/
+
+.formcontato {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.formcontato--esquerda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.formcontato__img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.formcontato__title {
+    padding-left: 2rem;
+}
+
+.formcontato__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-right: 2rem;
+}
+
+.formcontato__form {
+    float: inline-start;
+}
+
+.formcontato__botao {
+    background-color: var(--pessego);
+    color: black;
+    font-weight: bold;
+    border: 1px dashed black;
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.formcontato__botao:hover {
+    background: var(--salmao);
+	transform: scale(1.0);
+}
+
+/*footer*/
+
+section.footer{
+   text-align: center;
+   background-color: var(--salmao);
+}
+
+.footer__rodape {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+@media screen and (max-width: 768px) {
+    
+.pagina-inteira{
+    padding: 1.5rem;
+}
+
+/*Menu*/
+
+.menu__header {
+    text-align: center;
+    padding-left: 3rem;
+}
+
+.menu__list {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 0.5rem;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+}
+
+.menu__list__item {
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+/*Titulo*/
+section.title{
+    text-align: center;
+}
+
+.title__bio {
+    padding-top: .1rem;
+    margin: .5rem;
+}
+
+/*Sessão sobre*/
+
+/*Skills*/
+.skills {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.skills__line {
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 0.1rem;
+    justify-content: center;
+    width: 90%;
+}
+
+/*Hobbies*/
+.hobbies  {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.hobbies__line {
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 0.1rem;
+    width: 90%;
+}   
+
+/*Formação Acadêmica*/
+.academic {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.academic__courses {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 0.7rem;
+    width: 90%;
+}
+
+/*Experiência Profissional*/
+
+ /*Contato*/
+
+ .formcontato {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.formcontato--esquerda {
+    padding-bottom: 1rem;
+}
+
+.formcontato__subtext {
+    text-align: center;
+    padding-left: 1.5rem;
+    padding-bottom: .5rem;
+}
+
+.formcontato__title {
+    padding-left: 2rem;
+}
+
+.formcontato__text {
+    flex-direction: column;
+}
+
+.formcontato__form {
+    float: unset;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+/*Footer*/
+
+}
